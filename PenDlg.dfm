@@ -1,0 +1,79 @@
+object DlgPen: TDlgPen
+  Left = 223
+  Top = 333
+  BorderStyle = bsToolWindow
+  Caption = #1050#1072#1088#1072#1085#1076#1072#1096
+  ClientHeight = 222
+  ClientWidth = 209
+  Color = clBtnFace
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 128
+    Top = 280
+    Width = 75
+    Height = 25
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+    Visible = False
+  end
+  object Button2: TButton
+    Left = 208
+    Top = 280
+    Width = 75
+    Height = 25
+    Caption = #1054#1090#1084#1077#1085#1072
+    ModalResult = 2
+    TabOrder = 1
+    Visible = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 209
+    Height = 169
+    Align = alTop
+    Caption = #1062#1074#1077#1090
+    TabOrder = 2
+    object ColorPicker: TColorGrid
+      Left = 5
+      Top = 17
+      Width = 144
+      Height = 144
+      BackgroundEnabled = False
+      TabOrder = 0
+      OnChange = ColorPickerChange
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Top = 169
+    Width = 209
+    Height = 53
+    Align = alClient
+    Caption = #1056#1072#1079#1084#1077#1088
+    TabOrder = 3
+    object tbPenWidth: TTrackBar
+      Left = 2
+      Top = 15
+      Width = 205
+      Height = 36
+      Align = alClient
+      Max = 20
+      Min = 1
+      Position = 1
+      TabOrder = 0
+      OnChange = tbPenWidthChange
+    end
+  end
+end
